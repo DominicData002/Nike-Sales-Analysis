@@ -22,7 +22,7 @@ A retail dataset of Nike orders was provided in a raw, uncleaned state. The goal
 
 ## Process
 
-### 1. Data Cleaning (01_data_cleaning . sql)
+### 1. Data Cleaning
 Loaded the raw CSV into a staging table and systematically diagnosed and resolved:
 - **Region typos** — consolidated variants (e.g., "bengaluru" → "Bangalore", "Hyd"/"hyderbad" → "Hyderabad")
 - **Inconsistent date formats** — standardized 3 different formats into a single DATE type
@@ -33,7 +33,7 @@ Loaded the raw CSV into a staging table and systematically diagnosed and resolve
 
 All 2,500 rows were retained in the final clean table — nothing was silently deleted. Data quality issues are flagged via `Is_Return` and `Is_Incomplete` columns for full transparency.
 
-### 2. Exploratory Data Analysis & Business Analysis ([`02_eda_and_business_analysis.sql`](02_eda_and_business_analysis.sql))
+### 2. Exploratory Data Analysis & Business Analysis 
 Analyzed sales volume by product line, region, gender category, and sales channel (using the full dataset), and analyzed revenue/margin patterns and discount impact on profitability (using only the 166 orders with complete, trustworthy revenue data).
 
 ### 3. Power BI Dashboard ([`dashboard/`](dashboard/))
