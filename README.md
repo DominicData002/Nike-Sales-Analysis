@@ -22,7 +22,7 @@ A retail dataset of Nike orders was provided in a raw, uncleaned state. The goal
 
 ## Process
 
-### 1. Data Cleaning ([01_data_cleaning.sql](01_data_cleaning.sql))
+### 1. Data Cleaning (01_data_cleaning . sql)
 Loaded the raw CSV into a staging table and systematically diagnosed and resolved:
 - **Region typos** — consolidated variants (e.g., "bengaluru" → "Bangalore", "Hyd"/"hyderbad" → "Hyderabad")
 - **Inconsistent date formats** — standardized 3 different formats into a single DATE type
